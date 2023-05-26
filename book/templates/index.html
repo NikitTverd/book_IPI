@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <title>Book List</title>
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+</head>
+
+</head>
+<body>
+<script src="/static/js/bootstrap.min.js"></script>
+    <h1>Book List</h1>
+    <ul>
+        {{range .}}
+        <li><a href="/books/{{.ID}}">{{.Title}}</a> by {{.Author}}</li>
+        {{end}}
+    </ul>
+</body>
+</html>
